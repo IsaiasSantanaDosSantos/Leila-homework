@@ -1,0 +1,132 @@
+:root {
+  --redColor: red;
+  --whiteColor: white;
+  --blueBc: #def5f8;
+  --darkBlue: #83cbcd;
+  --defaultFont: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: var(--defaultFont);
+  -webkit-print-color-adjust: exact;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pages {
+  width: 297mm;
+  height: 210mm;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  color: var(--redColor);
+  box-shadow: 0 0 41px -16px #000;
+}
+.lineOne {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 99mm;
+  border-left: 1px dashed #0000004a;
+}
+.lineTwo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 198mm;
+  border-left: 1px dashed #0000004a;
+}
+.pageContainer {
+  width: 93%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.column {
+  width: 30%;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+}
+.secundColumn {
+  background-color: var(--blueBc);
+  border: 1px solid var(--darkBlue);
+}
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.text {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.imgBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    var(--darkBlue) 26%,
+    var(--whiteColor)
+  );
+}
+.imgBox img {
+  width: 81%;
+}
+img {
+  width: 100%;
+}
+.senacImg {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 150px;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--darkBlue);
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--whiteColor);
+  position: relative;
+  z-index: 1;
+}
+.circle span {
+  width: 87%;
+  height: 87%;
+  border: 1px solid var(--darkBlue);
+  margin: auto;
+  border-radius: 50px;
+}
+.bar {
+  position: absolute;
+  width: 87%;
+  border-bottom: 1px dashed var(--darkBlue);
+  margin-top: -15px;
+
+  z-index: 0;
+}
