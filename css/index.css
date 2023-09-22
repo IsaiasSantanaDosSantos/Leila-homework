@@ -28,6 +28,7 @@ body * {
   margin-bottom: 50px;
   color: var(--redColor);
   box-shadow: 0 0 41px -16px #000;
+  page-break-before: always;
 }
 .lineOne {
   position: absolute;
